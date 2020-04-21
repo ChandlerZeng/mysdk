@@ -2,10 +2,14 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/MySDK.iml" filepath="$PROJECT_DIR$/MySDK.iml" />
-      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
-      <module fileurl="file://$PROJECT_DIR$/javatest/javatest.iml" filepath="$PROJECT_DIR$/javatest/javatest.iml" />
-      <module fileurl="file://$PROJECT_DIR$/mainsdk/mainsdk.iml" filepath="$PROJECT_DIR$/mainsdk/mainsdk.iml" />
+      <module fileurl="file://$PROJECT_DIR$/MySDK.iml" filepath="$PROJECT_DIR$/MySDK.iml" group="MySDK" />
+      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" group="MySDK/app" />
+      <module fileurl="file://$PROJECT_DIR$/javatest/javatest.iml" filepath="$PROJECT_DIR$/javatest/javatest.iml" group="MySDK/javatest" />
+      <module fileurl="file://$PROJECT_DIR$/mainsdk/mainsdk.iml" filepath="$PROJECT_DIR$/mainsdk/mainsdk.iml" group="MySDK/mainsdk" />
+      <module fileurl="file://$PROJECT_DIR$/mycordova/mycordova.iml" filepath="$PROJECT_DIR$/mycordova/mycordova.iml" group="MySDK/mycordova" />
+      <module fileurl="file://$PROJECT_DIR$/mywidget/mywidget.iml" filepath="$PROJECT_DIR$/mywidget/mywidget.iml" group="MySDK/mywidget" />
+      <module fileurl="file://$PROJECT_DIR$/oven/oven.iml" filepath="$PROJECT_DIR$/oven/oven.iml" group="MySDK/oven" />
+      <module fileurl="file://$PROJECT_DIR$/wwapi/wwapi.iml" filepath="$PROJECT_DIR$/wwapi/wwapi.iml" group="MySDK/wwapi" />
     </modules>
   </component>
 </project>

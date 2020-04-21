@@ -1,0 +1,31 @@
+{
+    "update": "",
+    "module": "mapp",
+    "plugins": [
+        {
+            "pluginname": "device",
+            "pluginclass": "com.zcq.sdk.test.cordova.plugins.LDPDevice",
+            "exports": [
+                {
+                    "showmethod": "getDeviceInfo",
+                    "realmethod": "getDeviceInfo"
+                }
+            ]
+        },
+        {
+            "pluginname": "app",
+            "pluginclass": "com.zcq.sdk.test.cordova.plugins.LDPAppInfo",
+            "exports": []
+        },
+        {
+            "pluginname": "nav",
+            "pluginclass": "com.zcq.sdk.test.cordova.plugins.LDPNavCtrl",
+            "exports": []
+        },
+        {
+            "pluginname": "ui",
+            "pluginclass": "com.zcq.sdk.test.cordova.plugins.LDPUIGlobalCtrl",
+            "exports": []
+        }
+    ]
+}

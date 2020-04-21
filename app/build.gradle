@@ -1,29 +1,110 @@
 apply plugin: 'com.android.application'
+apply plugin: 'org.greenrobot.greendao'
+
+def keystoreFilepath = ''
+def keystorePSW = ''
+def keystoreAlias = ''
+def keystoreAliasPSW = ''
+// default keystore file, PLZ config file path in local.properties
+def keyfile = file('s.keystore.temp')
+
+Properties properties = new Properties()
+// local.properties file in the root director
+properties.load(project.rootProject.file('local.properties').newDataInputStream())
+keystoreFilepath = properties.getProperty("keystore.path")
+
+if (keystoreFilepath) {
+    keystorePSW = properties.getProperty("keystore.password")
+    keystoreAlias = properties.getProperty("keystore.alias")
+    keystoreAliasPSW = properties.getProperty("keystore.alias_password")
+    keyfile = file(keystoreFilepath)
+}
 
 android {
-    compileSdkVersion 25
-    buildToolsVersion "27.0.3"
-    defaultConfig {
-        applicationId "mysdk.zcq.com.mysdk"
-        minSdkVersion 15
-        targetSdkVersion 25
-        versionCode 1
-        versionName "1.0"
-        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+    compileSdkVersion 27
+    buildToolsVersion '28.0.3'
+    greendao {
+        schemaVersion 2
+        daoPackage 'com.zcq.sdk.test.greendao'
+        targetGenDir 'src/main/java'
     }
-    buildTypes {
+    defaultConfig {
+        applicationId "com.zcq.sdk.test"
+        minSdkVersion 15
+        targetSdkVersion 27
+        versionCode 1
+        versionName "2.0"
+    }
+
+    /*android {
+        productFlavors {
+            kuan {}
+            xiaomi {}
+            qh360 {}
+            baidu {}
+            wandoujia {}
+            yingyongbao {}
+        }
+
+        productFlavors.all {
+            flavor -> flavor.manifestPlaceholders = [UMENG_CHANNEL_VALUE: name]
+        }
+    }*/
+
+    signingConfigs {
+        debug {
+            storeFile keyfile
+            storePassword keystorePSW
+            keyAlias keystoreAlias
+            keyPassword keystoreAliasPSW
+            println("====== signingConfigs.debug ======")
+        }
         release {
-            minifyEnabled false
+            storeFile keyfile
+            storePassword keystorePSW
+            keyAlias keystoreAlias
+            keyPassword keystoreAliasPSW
+            println("====== signingConfigs.release ======")
+        }
+    }
+
+    buildTypes {
+        debug {
+            println("====== buildTypes.debug ======")
+            signingConfig signingConfigs.debug
+        }
+        release {
+            println("====== buildTypes.release ======")
+            //是否混淆
+            minifyEnabled true
+            zipAlignEnabled true
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            signingConfig signingConfigs.release
+            applicationVariants.all { variant ->
+                variant.outputs.all { output ->
+                    def outputFile = output.outputFile
+                    if (outputFile != null && outputFile.name.endsWith('.apk')) {
+                        // 输出apk名称为mysdk_v1.0.apk
+                        def fileName = "mysdk_v${defaultConfig.versionName}_release.apk"
+                        outputFileName = fileName
+                    }
+                }
+            }
         }
     }
 }
 
 dependencies {
-    compile fileTree(dir: 'libs', include: ['*.jar'])
-    androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
-        exclude group: 'com.android.support', module: 'support-annotations'
-    })
-    compile 'com.android.support:appcompat-v7:25.3.1'
-    testCompile 'junit:junit:4.12'
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    // add library
+    implementation project(':mycordova')
+    implementation 'com.android.support:appcompat-v7:27.0.2'
+    implementation 'org.greenrobot:greendao:3.2.2'
+    implementation 'org.greenrobot:greendao-generator:3.2.2'
+    implementation 'com.squareup.okhttp3:okhttp:3.6.0'
+    implementation 'com.squareup.okio:okio:1.11.0'
+    implementation 'com.github.lzyzsd:jsbridge:1.0.4'
+    implementation 'com.android.support.constraint:constraint-layout:1.0.2'
+    implementation 'com.android.support:recyclerview-v7:27.0.2'
+    implementation 'com.jakewharton:butterknife:8.8.1'
 }

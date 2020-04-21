@@ -1,1 +1,3 @@
-include ':app', ':mainsdk', ':javatest'
+include ':app', ':mainsdk', ':javatest', ':mycordova', ':wwapi'
+include ':oven'
+include ':mywidget'

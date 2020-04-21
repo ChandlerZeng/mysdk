@@ -1,8 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="GradleMigrationSettings" migrationVersion="1" />
   <component name="GradleSettings">
     <option name="linkedExternalProjectsSettings">
       <GradleProjectSettings>
+        <option name="testRunner" value="PLATFORM" />
         <option name="distributionType" value="DEFAULT_WRAPPED" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
         <option name="modules">
@@ -11,6 +13,10 @@
             <option value="$PROJECT_DIR$/app" />
             <option value="$PROJECT_DIR$/javatest" />
             <option value="$PROJECT_DIR$/mainsdk" />
+            <option value="$PROJECT_DIR$/mycordova" />
+            <option value="$PROJECT_DIR$/mywidget" />
+            <option value="$PROJECT_DIR$/oven" />
+            <option value="$PROJECT_DIR$/wwapi" />
           </set>
         </option>
         <option name="resolveModulePerSourceSet" value="false" />

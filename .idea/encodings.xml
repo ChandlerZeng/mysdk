@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding">
+    <file url="file://$PROJECT_DIR$/javatest/src/main/java/com/example/javatest/IOStream.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/javatest/src/main/java/com/example/javatest/ObserverTest.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/javatest/src/main/java/com/example/javatest/RandomNum.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/javatest/src/main/java/com/example/javatest/StringTest.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/javatest/src/main/java/com/example/javatest/javamode/Java23Mode" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/javatest/src/main/java/com/example/javatest/javamode/behaviortype/ChainOfRespMode.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/javatest/src/main/java/com/example/javatest/javamode/behaviortype/CommandMode.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/javatest/src/main/java/com/example/javatest/javamode/behaviortype/InterpreterMode.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/javatest/src/main/java/com/example/javatest/javamode/behaviortype/IteratorMode.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/javatest/src/main/java/com/example/javatest/javamode/behaviortype/MediatorMode.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/javatest/src/main/java/com/example/javatest/javamode/behaviortype/MementoMode.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/javatest/src/main/java/com/example/javatest/javamode/behaviortype/ObserverMode.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/javatest/src/main/java/com/example/javatest/javamode/behaviortype/StateMode.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/javatest/src/main/java/com/example/javatest/javamode/behaviortype/StrategyMode.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/javatest/src/main/java/com/example/javatest/javamode/behaviortype/TemplateMode.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/javatest/src/main/java/com/example/javatest/javamode/behaviortype/VisitorMode.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/javatest/src/main/java/com/example/javatest/javamode/buildtype/AbstractFactoryMode.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/javatest/src/main/java/com/example/javatest/javamode/buildtype/BuilderMode.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/javatest/src/main/java/com/example/javatest/javamode/buildtype/SingletonMode.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/javatest/src/main/java/com/example/javatest/javamode/structuretype/BridgeMode.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/javatest/src/main/java/com/example/javatest/javamode/structuretype/CompositeMode.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/javatest/src/main/java/com/example/javatest/javamode/structuretype/DecoratorMode.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/javatest/src/main/java/com/example/javatest/javamode/structuretype/FacadeMode.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/javatest/src/main/java/com/example/javatest/javamode/structuretype/FlyweightMode.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/javatest/src/main/java/com/example/javatest/javamode/structuretype/PrototypeMode.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/javatest/src/main/java/com/example/javatest/javamode/structuretype/ProxyMode.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/javatest/src/main/java/com/example/javatest/javamode/structuretype/UsbAdapter.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/javatest/src/main/java/com/example/javatest/javaprinciple/DIPPrinciple.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/javatest/src/main/java/com/example/javatest/javaprinciple/DemeterPrinciple.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/javatest/src/main/java/com/example/javatest/javaprinciple/InterfaceSegregationPrinciple.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/javatest/src/main/java/com/example/javatest/javaprinciple/LiskSubPrinciple.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/javatest/src/main/java/com/example/javatest/javaprinciple/OpenClosedPrinciple.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/javatest/src/main/java/com/example/javatest/javaprinciple/SingleRespPrinciple.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/wwapi/src/main/java/com/tencent/wework/api/IWWAPI.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/wwapi/src/main/java/com/tencent/wework/api/model/WWAuthMessage.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/wwapi/src/main/java/com/tencent/wework/api/model/WWMediaFile.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/wwapi/src/main/java/com/tencent/wework/api/model/WWMediaLink.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/wwapi/src/main/java/com/tencent/wework/api/model/WWMediaLocation.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/wwapi/src/main/java/com/tencent/wework/api/model/WWMediaVideo.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/wwapi/src/main/java/com/tencent/wework/api/util/ReflecterHelper.java" charset="UTF-8" />
+  </component>
+</project>

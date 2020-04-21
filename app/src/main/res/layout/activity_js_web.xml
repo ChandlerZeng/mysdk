@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.github.lzyzsd.jsbridge.BridgeWebView
+        android:id="@+id/jsb_webview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    </com.github.lzyzsd.jsbridge.BridgeWebView>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="給Html发送消息并返回消息"
+        android:id="@+id/btn_send_msg"
+        android:background="#266161"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+
+</RelativeLayout>
